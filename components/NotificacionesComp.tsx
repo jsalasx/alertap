@@ -27,7 +27,7 @@ export const NotificacionesComp = () => {
                 token,
                 estadoToken: 1
             }).then(() => {
-                console.log("ok")
+                //console.log("ok")
             }
             )
         })
@@ -103,7 +103,7 @@ async function registerForPushNotificationsAsync() {
             return;
         }
         token = (await Notifications.getExpoPushTokenAsync()).data;
-        console.log(token);
+        //console.log(token);
     } else {
         alert('Must use physical device for Push Notifications');
     }

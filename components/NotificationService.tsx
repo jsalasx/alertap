@@ -44,7 +44,7 @@ export const registerForPushNotificationsAsync = async () => {
     return token;
 }
 export const schedulePushNotification = async (body: string) => {
-    console.log("entro a enviar notification")
+    //console.log("entro a enviar notification")
     await Notifications.scheduleNotificationAsync({
         content: {
             title: "Sistema de alerta temprana 📬",
@@ -71,7 +71,7 @@ export const NotificacionesComp = () => {
                 token,
                 estadoToken: 1
             }).then(() => {
-                console.log("ok")
+                //console.log("ok")
             }
             )
         })
@@ -80,7 +80,7 @@ export const NotificacionesComp = () => {
         });
 
         responseListener.current = Notifications.addNotificationResponseReceivedListener(response => {
-            console.log(response);
+            //console.log(response);
         });
 
         return () => {

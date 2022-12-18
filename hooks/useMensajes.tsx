@@ -35,7 +35,7 @@ export const useMensajes = () => {
             })
         } else {
             resp[0].data.forEach(element => {
-                console.log(element.mensaje);
+                //console.log(element.mensaje);
                 schedulePushNotification(element.mensaje)
             });
 
@@ -69,7 +69,7 @@ export const useMensajes = () => {
     useEffect(() => {
         const interval = setInterval(async () => {
             const token: string | undefined = await registerForPushNotificationsAsync()
-            console.log(token)
+            //console.log(token)
             getMensajes(token)
             //console.log("interval");
         }, 10000);
