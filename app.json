@@ -22,6 +22,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.xtdrack.alertap",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"

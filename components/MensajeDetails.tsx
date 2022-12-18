@@ -31,8 +31,6 @@ export const MensajeDetails = ({ mensaje, height = 200, width = 300 }: Props) =>
                 ...styles.msgContainer,
                 width,
                 height,
-
-                //backgroundColor: 'red'
             }}>
 
                 <Image source={{ uri }} style={{ width: 75, height: 75, marginTop: -10 }} ></Image>

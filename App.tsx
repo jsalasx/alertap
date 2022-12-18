@@ -5,6 +5,7 @@ import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
 import * as Notifications from 'expo-notifications';
+import { NotificacionesComp } from './components/NotificacionesComp';
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
@@ -13,9 +14,13 @@ export default function App() {
     return null;
   } else {
     return (
+
       <SafeAreaProvider>
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
+
+
+
       </SafeAreaProvider>
     );
   }
