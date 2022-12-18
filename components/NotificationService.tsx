@@ -2,6 +2,7 @@ import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 import React, { useState, useRef } from 'react';
 import { Platform } from 'react-native';
+import MensajesDB from '../api/MensajesDB';
 
 
 Notifications.setNotificationHandler({
@@ -36,6 +37,13 @@ export const registerForPushNotificationsAsync = async () => {
             return;
         }
         token = (await Notifications.getExpoPushTokenAsync()).data;
+        MensajesDB.post("/tokens/", {
+            token,
+            estadoToken: 1,
+            esMovil: 1
+        }).then(() => {
+            //console.log("ok")
+        })
         //console.log(token);
     } else {
         alert('Must use physical device for Push Notifications');

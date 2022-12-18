@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911653045152",
+    "project_id": "alertaewbsuno",
+    "storage_bucket": "alertaewbsuno.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911653045152:android:f9cd9d3b15aa6458e99ac5",
+        "android_client_info": {
+          "package_name": "com.xtdrack.alertap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911653045152-lk67i7v9akr3t2gm1uusca33ccplphdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNoIGtrFNcEE7lc9_6YiZpJXAKtC-XTu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911653045152-lk67i7v9akr3t2gm1uusca33ccplphdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

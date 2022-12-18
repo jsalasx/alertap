@@ -68,10 +68,11 @@ export const useMensajes = () => {
 
     useEffect(() => {
         const interval = setInterval(async () => {
-            const token: string | undefined = await registerForPushNotificationsAsync()
+            //const token: string | undefined = await registerForPushNotificationsAsync()
             //console.log(token)
-            getMensajes(token)
-            //console.log("interval");
+            //getMensajes(token)
+            getMensajesInit();
+            console.log("interval");
         }, 10000);
         return () => clearInterval(interval);
     }, []);
